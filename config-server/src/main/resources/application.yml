@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hahajjy/jjy-config.git
+          search-paths: java-config
+      label: master
+server:
+  port: 8887
